@@ -1603,6 +1603,8 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     .mobile-menu-btn { display: none; }
     h1, .hero-content-centered h1 { font-size: 40px; }
     h2 { font-size: 32px; }
+    p { font-size: 16px; margin-bottom: 24px; }
+    .section-header p { font-size: 18px; }
     .hero-content-centered p { font-size: 16px; }
     .hero-buttons { flex-direction: column; gap: 15px; }
     .features-grid { grid-template-columns: 1fr; gap: 24px; }
@@ -1654,6 +1656,8 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     h1, .hero-content-centered h1 { font-size: 30px; }
     h2 { font-size: 26px; }
     h3 { font-size: 20px; }
+    p { font-size: 15px; margin-bottom: 20px; }
+    .section-header p { font-size: 16px; line-height: 1.5; }
     .form-container { padding: 20px; }
     .hero-slideshow { height: 50vh; min-height: 300px; }
     .hero-buttons { flex-direction: column; gap: 12px; }
