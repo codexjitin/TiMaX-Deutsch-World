@@ -1,6 +1,6 @@
 # TiMaX Deutsch World - Learn German
 
-A modern, responsive website for learning German with Tisha & Maximilian. Features live classes, Goethe exam preparation, and cultural training from A1 to C1 levels.
+A modern, responsive website for learning German with Tisha & Maximilian. Features live classes, Goethe exam preparation, and cultural training from A1 to C1 levels
 
 ## 🌍 Website Features
 
