@@ -1600,7 +1600,11 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     .hero-content-centered p { font-size: 16px; }
     .hero-buttons { flex-direction: column; gap: 15px; }
     .features-grid { grid-template-columns: 1fr; }
+    .feature-card { padding: 40px 30px; }
     .services-grid { grid-template-columns: 1fr; }
+    .service-card { padding: 40px 30px; min-height: 320px; }
+    .exam-prep-card { padding: 40px 30px; }
+    .review-card { padding: 30px; }
     .team-media, .team-img { min-height: 280px; height: 280px; }
     .team-info { padding: 30px 20px; }
     .custom-form .form-row { grid-template-columns: 1fr; }
@@ -1644,6 +1648,25 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     .hero-buttons { flex-direction: column; gap: 12px; }
     .hero-buttons .btn { width: 100%; font-size: 16px; padding: 14px 20px; }
     
+    /* Card Size Fixes for Mobile */
+    .feature-card { padding: 24px 20px; }
+    .service-card { padding: 24px 20px; min-height: auto; }
+    .review-card { padding: 20px; }
+    .level-card { padding: 20px 15px; }
+    .exam-prep-card { padding: 24px 20px; }
+    
+    .icon-box, .service-icon { 
+        min-width: 60px; min-height: 60px; 
+        width: 60px; height: 60px; 
+        margin-bottom: 16px; 
+        padding: 12px;
+    }
+    .icon-box svg, .service-icon svg { width: 32px; height: 32px; }
+    .service-card h3, .feature-card h3 { font-size: 22px; margin-bottom: 12px; }
+    .service-card p, .feature-card p { font-size: 15px; }
+    .review-card::before { font-size: 50px; top: 10px; right: 15px; }
+    .team-info { padding: 24px 20px; }
+
     .footer-links {
         grid-template-columns: 1fr;
     }
