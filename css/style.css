@@ -1580,6 +1580,9 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
 }
 
 @media (max-width: 768px) {
+    .value-prop, .services-section, .reviews-section, .faq-section, .team-section, .contact-section, .levels-exams { padding: 60px 0; }
+    .gallery-section { padding: 60px 0 0 0; }
+    .section-header { margin-bottom: 40px; }
     .header-content { height: 80px; }
     .logo img { height: 60px; }
     .nav {
@@ -1599,17 +1602,18 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     h2 { font-size: 32px; }
     .hero-content-centered p { font-size: 16px; }
     .hero-buttons { flex-direction: column; gap: 15px; }
-    .features-grid { grid-template-columns: 1fr; }
-    .feature-card { padding: 40px 30px; }
-    .services-grid { grid-template-columns: 1fr; }
-    .service-card { padding: 40px 30px; min-height: 320px; }
-    .exam-prep-card { padding: 40px 30px; }
-    .review-card { padding: 30px; }
-    .team-media, .team-img { min-height: 280px; height: 280px; }
-    .team-info { padding: 30px 20px; }
+    .features-grid { grid-template-columns: 1fr; gap: 24px; }
+    .feature-card { padding: 30px 24px; }
+    .services-grid { grid-template-columns: 1fr; gap: 24px; }
+    .service-card { padding: 30px 24px; min-height: auto; }
+    .exam-prep-card { padding: 30px 24px; }
+    .review-card { padding: 24px; }
+    .team-grid { gap: 24px; }
+    .team-media, .team-img { min-height: 240px; height: 240px; }
+    .team-info { padding: 24px 20px; }
     .custom-form .form-row { grid-template-columns: 1fr; }
     .form-container { padding: 30px; }
-    .levels-grid { grid-template-columns: 1fr; }
+    .levels-grid { grid-template-columns: 1fr; gap: 16px; }
     .footer {
         padding: 72px 0 24px;
     }
@@ -1640,6 +1644,9 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
 }
 
 @media (max-width: 520px) {
+    .value-prop, .services-section, .reviews-section, .faq-section, .team-section, .contact-section, .levels-exams { padding: 40px 0; }
+    .gallery-section { padding: 40px 0 0 0; }
+    .section-header { margin-bottom: 30px; }
     h1, .hero-content-centered h1 { font-size: 30px; }
     h2 { font-size: 26px; }
     h3 { font-size: 20px; }
@@ -1649,23 +1656,35 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     .hero-buttons .btn { width: 100%; font-size: 16px; padding: 14px 20px; }
     
     /* Card Size Fixes for Mobile */
-    .feature-card { padding: 24px 20px; }
-    .service-card { padding: 24px 20px; min-height: auto; }
-    .review-card { padding: 20px; }
-    .level-card { padding: 20px 15px; }
-    .exam-prep-card { padding: 24px 20px; }
+    .features-grid, .services-grid, .levels-grid, .team-grid { gap: 16px; }
+    .feature-card { padding: 20px 16px; }
+    .service-card { padding: 20px 16px; min-height: auto; }
+    .review-card { padding: 16px; }
+    .level-card { padding: 16px 12px; }
+    .exam-prep-card { padding: 20px 16px; }
     
     .icon-box, .service-icon { 
-        min-width: 60px; min-height: 60px; 
-        width: 60px; height: 60px; 
-        margin-bottom: 16px; 
-        padding: 12px;
+        min-width: 48px; min-height: 48px; 
+        width: 48px; height: 48px; 
+        margin-bottom: 12px; 
+        padding: 10px;
     }
-    .icon-box svg, .service-icon svg { width: 32px; height: 32px; }
-    .service-card h3, .feature-card h3 { font-size: 22px; margin-bottom: 12px; }
-    .service-card p, .feature-card p { font-size: 15px; }
-    .review-card::before { font-size: 50px; top: 10px; right: 15px; }
-    .team-info { padding: 24px 20px; }
+    .icon-box svg, .service-icon svg { width: 24px; height: 24px; }
+    .service-card h3, .feature-card h3, .level-card h4, .exam-prep-card h3 { font-size: 18px; margin-bottom: 8px; }
+    .service-card p, .feature-card p, .level-card p, .exam-prep-card p { font-size: 14px; line-height: 1.5; }
+    .exam-features { margin-top: 20px; gap: 12px; }
+    .exam-features li { padding: 12px 16px; font-size: 14px; margin-bottom: 8px; }
+    
+    .review-card::before { font-size: 40px; top: 10px; right: 10px; }
+    .review-top .reviewer { font-size: 16px; }
+    .review-text { font-size: 14px; margin-bottom: 16px; }
+    
+    .team-media, .team-img { min-height: 200px; height: 200px; }
+    .team-info { padding: 20px 16px; }
+    .team-info h3 { font-size: 24px; }
+    .team-role { font-size: 16px; margin-bottom: 12px; }
+    .team-points li { font-size: 14px; gap: 8px; }
+    .team-points li svg { width: 18px; height: 18px; min-width: 18px; }
 
     .footer-links {
         grid-template-columns: 1fr;
