@@ -1,0 +1,55 @@
+# Git ignore file for TiMaX Deutsch World
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Dependencies
+*.bak
+*.tmp
+
+# Compiled CSS/JS (if minified)
+*.min.css
+*.min.js
+
+# Backup files
+*.backup
+*-backup.*

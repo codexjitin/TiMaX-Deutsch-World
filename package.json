@@ -1,0 +1,36 @@
+{
+  "name": "timax-deutsch-world",
+  "version": "1.0.0",
+  "description": "TiMaX Deutsch World - Learn German with Tisha & Maximilian",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "node scripts/rewrite-seo.js",
+    "minify-css": "echo 'CSS minification - Use a tool like cssnano or minify-css-cli'",
+    "minify-js": "echo 'JS minification - Use a tool like terser or uglify-js'",
+    "test": "echo 'Run your tests here'",
+    "serve": "http-server -p 8080"
+  },
+  "keywords": [
+    "german",
+    "language",
+    "learning",
+    "goethe",
+    "education",
+    "tutoring"
+  ],
+  "author": "Tisha & Maximilian",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^6.0.0",
+    "http-server": "^14.1.1",
+    "minify-css": "^1.0.6",
+    "terser": "^5.27.0",
+    "uglify-js": "^3.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/timax-deutsch-world"
+  },
+  "homepage": "https://timax-deutsch-world.com"
+}
