@@ -24,7 +24,6 @@
   "devDependencies": {
     "cssnano": "^6.0.0",
     "http-server": "^14.1.1",
-    "minify-css": "^1.0.6",
     "terser": "^5.27.0",
     "uglify-js": "^3.17.4"
   },

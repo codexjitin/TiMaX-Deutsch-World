@@ -1604,6 +1604,7 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     .team-media, .team-img { min-height: 280px; height: 280px; }
     .team-info { padding: 30px 20px; }
     .custom-form .form-row { grid-template-columns: 1fr; }
+    .form-container { padding: 30px; }
     .levels-grid { grid-template-columns: 1fr; }
     .footer {
         padding: 72px 0 24px;
@@ -1638,6 +1639,7 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     h1, .hero-content-centered h1 { font-size: 30px; }
     h2 { font-size: 26px; }
     h3 { font-size: 20px; }
+    .form-container { padding: 20px; }
     .hero-slideshow { height: 50vh; min-height: 300px; }
     .hero-buttons { flex-direction: column; gap: 12px; }
     .hero-buttons .btn { width: 100%; font-size: 16px; padding: 14px 20px; }
@@ -1878,6 +1880,11 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
 .location-group {
     display: flex;
     gap: 15px;
+}
+
+.location-group input {
+    flex: 1;
+    min-width: 0;
 }
 
 @media (max-width: 600px) {
