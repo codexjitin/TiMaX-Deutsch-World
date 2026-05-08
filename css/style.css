@@ -1584,7 +1584,10 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     .gallery-section { padding: 60px 0 0 0; }
     .section-header { margin-bottom: 40px; }
     .header-content { height: 80px; }
+    .logo { margin-left: 0; }
     .logo img { height: 60px; }
+    .lang-switcher { margin-left: auto; }
+    .dropdown-toggle { padding: 8px 14px; min-width: auto; gap: 6px; }
     .nav {
         display: none;
         position: absolute;
@@ -1597,7 +1600,7 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
         border-bottom: 1px solid var(--glass-border);
     }
     .nav.active { display: flex; }
-    .mobile-menu-btn { display: flex; }
+    .mobile-menu-btn { display: none; }
     h1, .hero-content-centered h1 { font-size: 40px; }
     h2 { font-size: 32px; }
     .hero-content-centered p { font-size: 16px; }
@@ -1644,6 +1647,7 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
 }
 
 @media (max-width: 520px) {
+    .container { padding: 0 16px; }
     .value-prop, .services-section, .reviews-section, .faq-section, .team-section, .contact-section, .levels-exams { padding: 40px 0; }
     .gallery-section { padding: 40px 0 0 0; }
     .section-header { margin-bottom: 30px; }
@@ -1654,6 +1658,9 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     .hero-slideshow { height: 50vh; min-height: 300px; }
     .hero-buttons { flex-direction: column; gap: 12px; }
     .hero-buttons .btn { width: 100%; font-size: 16px; padding: 14px 20px; }
+    
+    .dropdown-toggle { padding: 6px 10px; font-size: 14px; }
+    .dropdown-toggle .chevron { width: 14px; height: 14px; }
     
     /* Card Size Fixes for Mobile */
     .features-grid, .services-grid, .levels-grid, .team-grid { gap: 16px; }
