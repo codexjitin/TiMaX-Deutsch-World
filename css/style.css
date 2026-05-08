@@ -1670,6 +1670,11 @@ p { font-size: 19px; color: var(--text-secondary); margin-bottom: 32px; font-wei
     .level-card { padding: 16px 12px; }
     .exam-prep-card { padding: 20px 16px; }
     
+    /* FAQ Size Fixes for Mobile */
+    .accordion-header { padding: 16px 20px; font-size: 16px; }
+    .accordion-header .icon { width: 24px; height: 24px; }
+    .accordion-content p { padding: 0 20px 16px; font-size: 14px; }
+    
     .icon-box, .service-icon { 
         min-width: 48px; min-height: 48px; 
         width: 48px; height: 48px; 
