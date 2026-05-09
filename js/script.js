@@ -404,51 +404,32 @@ document.addEventListener('DOMContentLoaded', () => {
             return firstCard ? firstCard.offsetWidth + 20 : 380; // card width + 20px gap
         };
 
-        const getCurrentReviewIndex = () => {
-            if (reviewCards.length === 0) return 0;
-
-            const carouselCenter = reviewsCarousel.scrollLeft + reviewsCarousel.clientWidth / 2;
-            let closestIndex = 0;
-            let closestDistance = Infinity;
-
-            reviewCards.forEach((card, index) => {
-                const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-                const distance = Math.abs(cardCenter - carouselCenter);
-                if (distance < closestDistance) {
-                    closestDistance = distance;
-                    closestIndex = index;
-                }
-            });
-
-            return closestIndex;
-        };
-
-        const scrollToReview = (index) => {
-            if (reviewCards.length === 0) return;
-
-            const safeIndex = (index + reviewCards.length) % reviewCards.length;
-            const targetCard = reviewCards[safeIndex];
-
-            reviewsCarousel.scrollTo({
-                left: targetCard.offsetLeft,
-                behavior: 'smooth'
-            });
-        };
-
         const goToNextReview = () => {
-            scrollToReview(getCurrentReviewIndex() + 1);
+            if (Math.ceil(reviewsCarousel.scrollLeft + reviewsCarousel.clientWidth) >= reviewsCarousel.scrollWidth - 10) {
+                reviewsCarousel.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                reviewsCarousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+            }
         };
 
         const goToPreviousReview = () => {
-            scrollToReview(getCurrentReviewIndex() - 1);
+            if (reviewsCarousel.scrollLeft <= 10) {
+                reviewsCarousel.scrollTo({ left: reviewsCarousel.scrollWidth, behavior: 'smooth' });
+            } else {
+                reviewsCarousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+            }
         };
 
         revPrevBtn.addEventListener('click', () => {
             goToPreviousReview();
+            stopAutoReviewRotation();
+            startAutoReviewRotation();
         });
 
         revNextBtn.addEventListener('click', () => {
             goToNextReview();
+            stopAutoReviewRotation();
+            startAutoReviewRotation();
         });
 
         let autoReviewTimer = null;
